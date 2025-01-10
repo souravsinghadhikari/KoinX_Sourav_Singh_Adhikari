@@ -5,6 +5,7 @@ import cors from "cors"
 
 import connectDB from "./db/index.js";
 import updateCryptoInfo from './scheduler/updateCryptoInfo.js';
+import router from './routes/user.router.js';
 
 dotenv.config({
     path: './env'
@@ -20,6 +21,7 @@ app.use(cors({
 }))
 app.use(express.json({ limit: "16kb" }))
 app.use(express.urlencoded({ extended: true }))
+app.use('/', router);
 
 
 // monmgo db connection
