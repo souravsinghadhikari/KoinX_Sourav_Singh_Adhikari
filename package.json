@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "A nodejs apllication for fetching data of 3 major crypto currency",
   "type": "module",
-  "main": "index.js",
+  "main": "src/app.js",
   "scripts": {
+    "start": "node src/app.js",
     "dev": "nodemon src/app.js"
   },
   "keywords": [
@@ -13,5 +14,13 @@
     "JavaScript"
   ],
   "author": "Sourav Singh Adhikari",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.4.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.4"
+  }
 }
