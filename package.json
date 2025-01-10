@@ -2,9 +2,10 @@
   "name": "koinx_sourav_singh_adhikari",
   "version": "1.0.0",
   "description": "A nodejs apllication for fetching data of 3 major crypto currency",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/app.js"
   },
   "keywords": [
     "NOdejs",
