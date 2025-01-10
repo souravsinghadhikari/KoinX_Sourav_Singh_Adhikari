@@ -1,7 +1,10 @@
+// importing modules 
 import dotenv from "dotenv";
 import express from "express";
-import connectDB from "./db/index.js";
 import cors from "cors"
+
+import connectDB from "./db/index.js";
+import updateCryptoInfo from './scheduler/updateCryptoInfo.js';
 
 dotenv.config({
     path: './env'
@@ -22,6 +25,8 @@ app.use(express.urlencoded({ extended: true }))
 // monmgo db connection
 connectDB()
     .then(() => {
+        // upate crypto information
+        updateCryptoInfo();  
         app.on("error", (error) => {
             console.log("err: ", error);
             throw error;

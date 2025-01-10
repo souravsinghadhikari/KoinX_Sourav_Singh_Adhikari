@@ -1,1 +1,1 @@
-export const DB_NAME = "cryptocurrency"
+export const DB_NAME = "cryptocurrency"  // the databasename

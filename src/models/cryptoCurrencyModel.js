@@ -10,4 +10,5 @@ const cryptoCurrencySchema = new Schema(
     { timestamps: true }
 );
 
-export const CryptoCoin = mongoose.model('CryptoCoin', cryptoCurrencySchema);
+const cryptoCoin = mongoose.model('cryptoCoin', cryptoCurrencySchema);
+export default cryptoCoin
